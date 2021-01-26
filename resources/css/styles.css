@@ -1,0 +1,518 @@
+/*General*/
+
+html {
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	color: #362E13;
+}
+
+body {
+	max-width: 100vw;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3rem 1.25rem;
+	grid-auto-columns: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+	color: #66664F;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul {
+	margin: 0;
+}
+
+h2 {
+	font-size: 2rem;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 600;
+}
+
+h4 {
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 1rem;
+	margin: 1rem 0 0.5rem 0;
+	font-weight: 500;
+}
+
+main h2 {
+	padding-bottom: 0.5rem;
+}
+
+p {
+	padding-bottom: 0.75rem;
+}
+
+a {
+	color: #346678;
+}
+
+#activities,
+#testimonials {
+	margin: 0 4.5rem;
+}
+
+address span {
+	font-weight: 600;
+	font-style: normal;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 800px) {
+	main {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-auto-columns: 100%;
+	}
+}
+
+
+
+
+/*Navigation*/
+
+nav {
+	width: 100%;
+	height: 7.25rem;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #66664F;
+}
+
+nav .logo {
+	width: 4%;
+	margin: 1rem 0 0.75rem 0.75rem;
+}
+
+nav .logo-small {
+	width: 5rem;
+}
+
+#nav-links {
+	display: block;
+	margin: 1.3rem;
+}
+
+#nav-links a {
+	padding: 0.6rem;
+}
+
+#nav-links a:link {
+	color: #F9FEF0;
+	font-weight: 500;
+}
+
+#nav-links a:visited {
+	color: #BBBFB4;
+}
+
+#nav-links a:hover {
+	color: #E6E36C;
+}
+
+#nav-links a:active {
+	color: #592122;
+}
+
+nav .icon {
+	display: none;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 1000px) {
+
+	nav .icon {
+		display: block;
+		color: #F9FEF0;
+		position: absolute;
+		right: 1.5rem;
+		top: 1.9rem;
+	}
+
+	.fa-navicon:before,
+	.fa-reorder:before,
+	.fa-bars:before {
+		font-size: 3.5rem;
+	}
+
+	#nav-links {
+		display: none;
+		margin: 0;
+		width: 100%;
+		position: absolute;
+		top: 7.25rem;
+		background-color: #3E403C;
+		opacity: 0.9;
+	}
+
+	#nav-links a {
+		display: block;
+		width: 100%;
+		padding-left: 2rem;
+	}
+
+	#nav-links a:hover {
+		background-color: #E6E36C;
+		color: #3E403C;
+		font-weight: 600;
+	}
+
+	#nav-links a:active {
+		color: #592122;
+	}
+
+	#nav-bottom {
+		padding-bottom: 0.7rem;
+	}
+}
+
+
+
+
+/*Hero Section*/
+
+header {
+	grid-column: 1 / 3;
+	background-image: url("../images/background-2.jpg");
+	background-color: #E6E36C;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 75vh;
+	text-align: center;
+}
+
+header div {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-top: 4rem;
+	padding: 1rem 0 2.25rem 0;
+}
+
+header h1 {
+	font-family: "Abril Fatface", cursive;
+	font-size: 5rem;
+	color: #592122;
+}
+
+header blockquote {
+	margin: 1rem 2.5rem 0 2.5rem;
+	font-weight: 500;
+	font-size: 2rem;
+	font-style: italic;
+}
+
+header h4 {
+	font-weight: 500;
+	color: #362E13;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 800px) {
+	header {
+		grid-column: 1 / 2;
+	}
+}
+
+
+
+
+/*About Us*/
+
+#about {
+	grid-column: 1 / 2;
+	margin: 0 2rem 0 5rem;
+}
+
+#about p,
+#about address {
+	margin-left: 0.1rem;
+}
+
+#about blockquote {
+	font-style: italic;
+	font-weight: 600;
+}
+
+#about figcaption {
+	padding-bottom: 0.4rem;
+}
+
+#about address p {
+	padding-bottom: 0.15rem;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 800px) {
+	#about {
+		grid-column: 1 / 2;
+		margin: 0 4.5rem;
+	}
+}
+
+
+
+
+/*Upcoming Events*/
+
+#events {
+	grid-column: 2 / 3;
+	margin: 0 5rem 0 2rem;
+}
+
+#events div {
+	margin-left: 0.3rem;
+}
+
+#events ul {
+	list-style-type: circle;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 800px) {
+	#events {
+		grid-column: 1 / 2;
+		margin: 0 4.5rem;
+	}
+}
+
+
+
+
+/*Main Quote*/
+
+#quote {
+	grid-column: 1 / 3;
+	background-color: #E6E36C;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+#quote h2 {
+	font-family: "Abril Fatface", cursive;
+	letter-spacing: 0.05rem;
+	color: #592122;
+}
+
+#quote blockquote {
+	font-size: 2rem;
+	margin: 0 2.5rem;
+	padding-top: 0.25rem;
+}
+
+#quote p {
+	padding: 0;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 800px) {
+	#quote {
+		grid-column: 1 / 2;
+	}
+}
+
+
+
+
+/*Our Activities*/
+
+#activities {
+	grid-column: 1 / 3;
+}
+
+#description {
+	margin-bottom: 0.5rem;
+}
+
+#description p {
+	margin-left: 0.2rem;
+}
+
+.activity-card {
+	margin: 0rem 1rem 1.5rem 1rem;
+}
+
+.activity-card h3 {
+	font-weight: 500;
+	font-size: 1.25rem;
+	padding: 0.25rem 0 0.15rem 0.6rem;
+	padding-bottom: 0.25rem;
+	background-color: #A2A69C;
+	color: #362E13;
+}
+
+#activities .image-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border: 2px solid #A2A69C;
+	padding: 1rem;
+}
+
+#activities img {
+	width: 24.5%;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 800px) {
+	#activities {
+		grid-column: 1 / 2;
+	}
+
+	#activities .image-container {
+	padding: 1rem 1rem 0.5rem 1rem;
+	}
+
+	#activities img {
+		width: 100%;
+		padding-bottom: 0.5rem;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1250px) {
+	#activities .image-container {
+	padding: 1rem 1rem 0.5rem 1rem;
+	}
+
+	#activities img {
+		width: 49.5%;
+		padding-bottom: 0.5rem;
+	}
+}
+
+
+
+
+
+/*Testimonials*/
+
+#testimonials {
+	grid-column: 1 / 3;
+}
+
+#testimonials div {
+	margin: 0 0 1rem 0.3rem;
+}
+
+#testimonials p {
+	padding: 0;
+	font-style: italic;
+	font-size: 1.25rem;
+}
+
+#testimonials .member-name {
+	font-style: normal;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #592122;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 800px) {
+	#testimonials {
+		grid-column: 1 / 2;
+	}
+}
+
+
+
+
+/*Return To Top*/
+
+#return-top {
+	grid-column: 1 / 3;
+	text-align: center;
+	margin: 2rem 0;
+	font-size: 1.25rem;
+}
+
+.logo-container img {
+	width: 15%;
+	margin-top: 0.75rem;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 800px) {
+	#return-top {
+		grid-column: 1 / 2;
+	}
+
+	.logo-container img {
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1250px) {
+	.logo-container img {
+		width:20%;
+	}
+}
+
+
+
+
+/*Footer*/
+
+footer {
+	background-image: url("../images/footer2.jpg");
+	background-color: black;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 2rem;
+	color: #BBBFB4;
+	display: flex;
+	flex-direction: column;
+	height: 35vh;
+}
+
+footer address {
+	width: 100%;
+	margin-top: 10.5rem;
+}
+
+footer h5 {
+	font-size: 1.25rem;
+	font-weight: 500;
+	font-style: normal;
+	margin: 0;
+	color: #BBBFB4;
+	text-transform: uppercase;
+}
+
+footer p {
+	padding: 0.15rem 0;
+}
+
+footer a {
+	color: #BBBFB4;
+}
+
+footer small {
+	width: 100%;
+	text-align: left;
+	margin: 1.5rem 0 1rem 0;
+}
